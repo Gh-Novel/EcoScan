@@ -1,0 +1,231 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    
+}
+.banner {
+    width: 100%;
+    height: 600px; /* 35% of viewport height */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    position: relative;
+}
+
+/* Style the banner image */
+.banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+/* Logo styles */
+.logo {
+    position: absolute;
+    top: 90px; /* Adjust top position as needed */
+    left: 210px; /* Adjust right position as needed */
+    width: 120px; /* Adjust the width as needed */
+    height: 80px;
+}
+
+.hedding {
+    background-color: aqua;
+    height: 50px;
+    width: 300px;
+    margin-left: 40px;
+    position: relative;
+}
+
+/* Heading styles */
+.banner-heading {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+/* Paragraph styles */
+.banner-paragraph {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    position: absolute;
+    top: 65%; /* Adjust the positioning as needed */
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-weight: 100px;
+    color: #fff; /* Text color */
+    text-align: left; /* Center-align the paragraph text */
+    width: 80%; /* Set a maximum width for better readability */
+}
+.add-complaint-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00ffad; /* Button background color */
+    color: #111111; /* Button text color */
+    border-radius: 40px; /* Rounded corners */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    padding: 18px;
+    width: 150px;
+    height: 15px;
+    text-align: center; /* Center-align the paragraph text */
+
+}
+
+.add-complaint-button:hover {
+    background-color: #3c2eff; 
+    color: #fff; 
+}
+
+/* Add the marquee animation */
+@keyframes marquee {
+    0% { transform: translateX(600%); }
+    100% { transform: translateX(-100%); }
+}
+
+.load {
+    width: 210px; /* Adjust the width as needed */
+    height: auto;
+    position: relative;
+    top: -240px; /* Adjust the vertical position as needed */
+    transform: scaleX(-1); /* Flip horizontally */
+    animation: marquee 25s linear infinite; /* Apply the marquee animation */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+}
+
+
+.sub-heading {
+    
+    font-size: 1.5em;
+    position: absolute;
+    top: 110%; /* Adjust the positioning as needed */
+    right: 62%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.sub-paragraph {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    max-width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 120%; /* Adjust the positioning as needed */
+    right: 55%;
+}
+.sub-paragraph-image {
+    width: 450px; /* Adjust the width as needed */
+    height: auto;
+    position: relative;
+    top: 200px; /* Adjust the vertical position as needed */
+    left: 550px; /* Adjust the horizontal position as needed */
+}
+.sub-heading2 {
+    
+    font-size: 1.5em;
+    position: absolute;
+    top: 170%; /* Adjust the positioning as needed */
+    left: 55%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.sub-paragraph2 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    max-width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 180%; /* Adjust the positioning as needed */
+    left: 55%;
+}
+
+.sub-paragraph-image2 {
+    width: 450px; /* Adjust the width as needed */
+    height: 450px;
+    position: relative;
+    top: 649px; /* Adjust the vertical position as needed */
+    left: -460px; /* Adjust the horizontal position as needed */
+}
+
+.sub-heading3 {
+    
+    font-size: 1.5em;
+    position: absolute;
+    top: 1810px; /* Adjust the vertical position as needed */
+    left: 210px; 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.sub-paragraph3 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    max-width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 1910px; /* Adjust the vertical position as needed */
+    left: 210px; 
+}
+.sub-paragraph-image3 {
+    width: 450px; /* Adjust the width as needed */
+    height: auto;
+    position: relative;
+    top: 710px; /* Adjust the vertical position as needed */
+    left: 780px; /* Adjust the horizontal position as needed */
+}
+.sub-paragraph-image4 {
+    width: 1450px; /* Adjust the width as needed */
+    height: auto;
+    position: relative;
+    top: 910px; /* Adjust the vertical position as needed */
+    right: 10px; /* Adjust the horizontal position as needed */
+}
+.image-container {
+    position: relative;
+    width: 1450px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Image styles */
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 2810px; /* Adjust the vertical position as needed */
+    right: 0px; /* Adjust the horizontal position as needed */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Text overlay styles */
+.overlay-text {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    color: #000; /* Text color */
+}
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    text-align: center; /* Center-align the text */
+    padding: 10px; /* Add some padding for spacing */
+    position: absolute;
+    bottom: -2600px;
+    width:100%;
+    height:100px; /* Push the footer to the bottom */
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+
+    <title>database</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="database.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+
+
+<style>
+  .box-1{
+    overflow-y: auto;
+    height: 400px;
+    width: 400px;
+    background-color: #f5f2f2;
+    position:absolute;
+    margin-left: 200px;
+    margin-top:60px;
+  }
+  .box-2{
+    height: 400px;
+    width: 400px;
+    background-color:#f5f2f2;
+    position:relative;
+    margin-left: 800px;
+    margin-top:60px;
+  }
+  
+  .box-3{
+    height: 600px;
+    width: 1000px;
+    background-color: #f5f2f2;
+    position:absolute;
+    margin-left: 200px;
+    margin-top:150px;
+  }
+  
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh; /* 100% viewport height to center vertically */
+        }
+        
+        #c_id {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #search {
+            background-color: #2A46FA;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 6px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        #search:hover {
+        background-color: #2AFAF4; /* Change the hover background color */
+       } 
+         .container{
+         width:180px;
+         margin-top: 5%;
+         margin-left: 38%;
+         margin-right: 50%;
+        }
+       
+        .get-location-button {
+            width:350px;
+            background: linear-gradient(to right, #cc2b5e , #753a88); 
+            color: white; /* White text color */
+            padding: 10px 20px; /* Padding around text */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Cursor on hover */
+        }
+        .get-location-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+</style>
+
+
+
+</head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-ae00"><img class="u-image u-image-circle u-image-1" src="images/WhatsAppImage2023-08-30at22.06.57.jpg" alt="" data-image-width="720" data-image-height="937"><a href="https://nicepage.com/k/consulting-website-templates" class="u-image u-logo u-image-2" data-image-width="1024" data-image-height="327">
+        <img src="images/logo.png" class="u-logo-image u-logo-image-1">
+      </a><p class="u-align-center u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-1">Novel</p><div class="u-container-style u-custom-color-1 u-expanded-width-lg u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h3 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2">Task panel</h3>
+        </div>
+      </div><div class="u-container-style u-group u-radius-15 u-shape-round u-white u-group-2">
+        <div class="u-container-layout u-container-layout-2">
+          <h4 class="u-custom-font u-font-lato u-text u-text-3">This month task's</h4>
+          <div class="u-shape u-shape-svg u-text-custom-color-1 u-shape-1">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 140 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0e65"></use></svg>
+            <svg class="u-svg-content" viewBox="0 0 140 160" x="0px" y="0px" id="svg-0e65" style="enable-background:new 0 0 140 160;"><g><path d="M77.3,90.9C74.9,91,72.4,91,70,91s-4.9,0-7.3-0.1c-20.6-0.6-36.9-3.4-48.7-7.5c-5.5-1.8-10.3-4-14-6.5v19.5v1.4v1.4v3.5
+		c8,8.2,34.7,15.7,70,15.7s62-7.5,70-15.7v-3.5v-1.4v-1.4V77c-3.7,2.5-8.5,4.7-14.1,6.5C114.1,87.5,97.8,90.4,77.3,90.9z"></path><path d="M0,40.9v19.5v1.4v1.4v3.5c7.4,7.6,30.9,14.6,62.4,15.6c0.3,0,0.7,0,1,0c0.9,0,1.8,0,2.7,0.1c1.3,0,2.6,0,3.9,0s2.6,0,3.9,0
+		c0.9,0,1.8,0,2.7-0.1c0.3,0,0.7,0,1,0c31.5-1,55-8,62.4-15.6v-3.5v-1.4v-1.4V40.9C126.4,50.1,97.6,55,70,55S13.6,50.1,0,40.9z"></path><path d="M139.6,23.5C136.5,11.7,112.3,0,70,0C27.8,0,3.7,11.6,0.4,23.4C0.2,23.8,0,24.2,0,24.7v1.4v5c7.9,8.1,34.5,15.7,70,15.7
+		s62.1-7.5,70-15.7v-5v-1.4C140,24.3,139.8,23.9,139.6,23.5z"></path><path d="M0,112.7v22.5c0,0.4,0.1,0.9,0.3,1.2C3.6,150,33.2,160,70,160c36.7,0,66.2-10,69.6-23.4c0.2-0.4,0.4-0.8,0.4-1.3v-22.5
+		c-11.6,8-35.4,14.3-70,14.3C35.4,127,11.6,120.7,0,112.7z"></path>
+</g></svg>
+          </div>
+          <h2 class="u-custom-font u-font-lato u-text u-text-default u-text-4">678</h2>
+          <p class="u-text u-text-palette-5-light-1 u-text-5">Complete</p>
+          <p class="u-text u-text-palette-5-light-1 u-text-6">480</p>
+        </div>
+      </div><div class="u-container-style u-group u-radius-15 u-shape-round u-white u-group-3">
+        <div class="u-container-layout u-container-layout-3">
+          <h4 class="u-custom-font u-font-lato u-text u-text-7">Pendding Task</h4>
+          <h2 class="u-custom-font u-font-lato u-text u-text-default u-text-8">240</h2>
+          <div class="u-shape u-shape-svg u-text-custom-color-1 u-shape-2">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 120" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8fb9"></use></svg>
+            <svg class="u-svg-content" viewBox="0 0 160 120" x="0px" y="0px" id="svg-8fb9" style="enable-background:new 0 0 160 120;"><g><path d="M159.9,12.2c0-0.2,0.1-0.4,0.1-0.6l-48.8,49.5L160,109c0-0.3-0.1-0.7-0.1-1V12.2L159.9,12.2z"></path><path d="M103.7,68.7L83.8,88.9c-1,1-2.3,1.5-3.6,1.5c-1.3,0-2.6-0.5-3.6-1.5L56.7,69.4L7.6,119.2c1.2,0.5,2.5,0.8,3.8,0.8h137.4
+		c2,0,3.9-0.6,5.5-1.6L103.7,68.7z"></path><path d="M80.1,77.4l74.5-75.6c-1.7-1.1-3.7-1.8-5.8-1.8H11.5C8.8,0,6.2,1.1,4.3,2.8L80.1,77.4z"></path><path d="M0,14v94c0,1.1,0.2,2.1,0.5,3.1L49,62L0,14z"></path>
+</g></svg>
+          </div>
+          <p class="u-text u-text-palette-5-light-1 u-text-9">Complete</p>
+          <p class="u-text u-text-palette-5-light-1 u-text-10">480</p>
+        </div>
+      </div><div class="u-container-style u-group u-radius-15 u-shape-round u-white u-group-4">
+        <div class="u-container-layout u-container-layout-4">
+          <h4 class="u-custom-font u-font-lato u-text u-text-11">Total This Year</h4>
+          <h2 class="u-custom-font u-font-lato u-text u-text-default u-text-12">4604</h2>
+          <div class="u-shape u-shape-svg u-text-custom-color-1 u-shape-3">
+            <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-57f3"></use></svg>
+            <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-57f3" style="enable-background:new 0 0 160 160;"><g><g><path d="M80,0C35.9,0,0,35.9,0,80s35.9,80,80,80s80-35.9,80-80S124.1,0,80,0z M124.7,58.9l-51.1,50.7c-3,3-7.8,3.2-11,0.2
+			L35.5,85.1c-3.2-3-3.4-8-0.6-11.2c3-3.2,8-3.4,11.2-0.4l21.5,19.6l45.7-45.7c3.2-3.2,8.2-3.2,11.4,0
+			C127.9,50.7,127.9,55.7,124.7,58.9z"></path>
+</g>
+</g></svg>
+          </div>
+          <p class="u-text u-text-palette-5-light-1 u-text-13">Complete</p>
+          <p class="u-text u-text-palette-5-light-1 u-text-14">480</p>
+        </div>
+      </div></header>
+      
+    <section class="u-clearfix u-section-1" id="sec-3810">
+
+      <div class="center-container">
+        <input type="text" id="c_id" placeholder="Enter c_id">
+        <button id="search">Search</button>
+    </div>
+
+
+
+     <div class="box-1">
+      <div id="complaintData">
+        <!-- Data from the servlet will be displayed here -->
+      </div>
+
+
+     
+     </div>
+      <div class="box-2">
+        <div id="searchResults"></div>
+      </div>
+       <div class="container">
+      <button class="get-location-button" id="getLocationButton">Get Location</button>
+    </div>
+    <div class="box-3">
+    <img id="complaintImage" src="" alt="Complaint Photo">
+    </div>
+
+    </section>
+   
+  <script>
+    // Function to extract URL parameters
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Get the month parameter from the URL
+    var selectedMonth = getUrlParameter('month');
+
+    // Wrap code in a DOMContentLoaded event listener
+    document.addEventListener("DOMContentLoaded", function () {
+        // Send an AJAX request to the servlet with the selected month
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "ComplaintByMonthServlet?monthNumber=" + selectedMonth, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Display the data returned by the servlet in the 'complaintData' div
+                document.getElementById("complaintData").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    });
+
+    document.getElementById("search").addEventListener("click", function () {
+        var c_id = document.getElementById("c_id").value;
+
+        // Send an AJAX request to the servlet with the selected c_id
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "ComplaintByMonthServlet?monthNumber=" + selectedMonth + "&c_id=" + c_id, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Display the data returned by the servlet in the 'searchResults' div
+                document.getElementById("searchResults").innerHTML = xhr.responseText;
+
+                // Get the photo path from the response
+                var photoPath = document.getElementById("searchResults").querySelector(".photoPath").textContent;
+
+                // Update the src attribute of the img element in box-3
+                document.getElementById("complaintImage").src = photoPath;
+            }
+        };
+        xhr.send();
+
+        // Hide the Coordinates column in box-1 when searching by ID
+        document.getElementById("coordinatesColumn").style.display = "none";
+    });
+
+    function getCoordinatesFromResults() {
+        const searchResults = document.getElementById("searchResults");
+        const coordinatesRegex = /(\d+\.\d+), (\d+\.\d+)/; // Regular expression to match coordinates
+
+        const match = coordinatesRegex.exec(searchResults.textContent);
+        if (match && match.length === 3) {
+            const latitude = match[1];
+            const longitude = match[2];
+
+            // Open Google Maps in a new tab
+            window.open(`https://www.google.com/maps?q=${latitude},${longitude}`);
+        } else {
+            alert("Coordinates not found in search results.");
+        }
+    }
+
+    // Attach a click event listener to the Get Location button
+    document.getElementById("getLocationButton").addEventListener("click", getCoordinatesFromResults);
+
+    document.getElementById("search").addEventListener("click", function () {
+        var c_id = document.getElementById("c_id").value;
+
+        // Send an AJAX request to the servlet with the selected c_id
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "ComplaintByMonthServlet?monthNumber=" + selectedMonth + "&c_id=" + c_id, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Display the data returned by the servlet in the 'searchResults' div
+                document.getElementById("searchResults").innerHTML = xhr.responseText;
+
+                // Get the photo path from the response
+                var photoPath = document.getElementById("searchResults").querySelector(".photoPath").textContent;
+
+                // Update the src attribute of the img element in box-3
+                document.getElementById("complaintImage").src = photoPath;
+            }
+        };
+        xhr.send();
+
+        // Hide the Coordinates column in box-1 when searching by ID
+        document.getElementById("coordinatesColumn").style.display = "none";
+    });
+    
+    function loadImageById(c_id) {
+        // Assuming your images are stored in the path C:\Users\my pc\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EcoScane\CPhoto\
+        var imagePath = "CPhoto/" + c_id + ".png"; // Adjust the path and file extension accordingly
+
+        // Set the src attribute of the image element
+        document.getElementById("complaintImage").src = imagePath;
+    }
+
+    // Attach a click event listener to the Search button
+    document.getElementById("search").addEventListener("click", function () {
+        var c_id = document.getElementById("c_id").value;
+        
+        // Call the function to load the image based on the entered ID
+        loadImageById(c_id);
+    });
+
+</script>
+
+</body></html>

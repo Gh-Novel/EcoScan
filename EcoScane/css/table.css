@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+/* Style table header */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style table data cells */
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style the table header and data cells for the first column (ID) */
+th:first-child,
+td:first-child {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Add spacing between rows */
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: #ddd;
+}
